@@ -1,5 +1,7 @@
-class App extends React.Component {
+window.App = class App extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}</h1>;
+    return <div className="app">
+      <window.Header />
+    </div>;
   }
 }
