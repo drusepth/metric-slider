@@ -15,6 +15,13 @@ window.Header = class Header extends React.Component {
 
   render() {
     return <div className="header">
+      <span
+        ref={(span) => { this.targetReadingLevelDisplay = span; }}
+        className="readingLevelDisplay"
+      >
+        { this.targetReadingLevel }
+      </span>
+
       <input
         type="range"
         min="1"
@@ -22,13 +29,6 @@ window.Header = class Header extends React.Component {
         onChange={ this.changeReadingLevel }
         defaultValue="{ this.targetReadingLevel }"
       />
-
-      <span
-        ref={(span) => { this.targetReadingLevelDisplay = span; }}
-        className="readingLevelDisplay"
-      >
-        { this.targetReadingLevel }
-      </span>
     </div>;
   }
 }

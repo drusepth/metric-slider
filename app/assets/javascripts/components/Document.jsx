@@ -1,6 +1,8 @@
 window.Document = class Header extends React.Component {
   constructor(props) {
     super(props);
+
+    this.documentText = 'It was a dark and stormy night...'
   }
 
   render() {
@@ -8,8 +10,10 @@ window.Document = class Header extends React.Component {
       <div
         className="document"
         contentEditable="true"
-      />
-
+        suppressContentEditableWarning
+      >
+        { this.documentText }
+      </div>
     </div>
   }
 }
