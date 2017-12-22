@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: lightblue;
+  margin-bottom: 16px;
+  padding: 10px 5px;
+  text-align: center;
+
+  input[type="range"] {
+    width: 500px;
+  }
+
+  .readingLevelDisplay {
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  -webkit-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.29);
+  box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.29);
+}
+
+.documentContainer {
+  .document {
+    width: 700px;
+    min-height: 500px;
+    padding: 10px;
+
+    border: 5px dashed #cccccc;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}

@@ -23,7 +23,10 @@ window.Header = class Header extends React.Component {
         defaultValue="{ this.targetReadingLevel }"
       />
 
-      <span ref={(span) => { this.targetReadingLevelDisplay = span; }}>
+      <span
+        ref={(span) => { this.targetReadingLevelDisplay = span; }}
+        className="readingLevelDisplay"
+      >
         { this.targetReadingLevel }
       </span>
     </div>;
