@@ -28,6 +28,8 @@
 }
 
 .documentContainer {
+  text-align: center;
+
   .document {
     width: 700px;
     min-height: 500px;
@@ -35,6 +37,8 @@
 
     border: 5px dashed #cccccc;
     margin: 0 auto;
+    margin-bottom: 20px;
     font-size: 18px;
+    text-align: left;
   }
 }
