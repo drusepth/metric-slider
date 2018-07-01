@@ -2,13 +2,16 @@ window.Document = class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.documentText = 'It was a dark and stormy night...'
+    console.log(props);
+    window.f = this.fnDisplayReadingLevel = props.fnDisplayReadingLevel.bind(this);
   }
 
   documentUpdateCallback(event) {
     var newDocumentText = event.target.innerText;
+    var currentReadability = Readability.grade(newDocumentText);
 
     console.log(newDocumentText);
+    console.log(currentReadability);
   }
 
   render() {
